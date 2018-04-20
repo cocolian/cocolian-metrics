@@ -1,4 +1,4 @@
-package org.jigsaw.payment.metric;
+package org.cocolian.metric;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -13,17 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jigsaw.payment.metric;
+package org.cocolian.metric;
 
 /**
  * @author shamphone@gmail.com
  * @version 1.0.0
  * @date 2017年8月14日
  */
-public class TestBeanWithInterface implements TestInterface {
-
-    @Override
-    @Timer("interface-method")
-    public void interfaceMethod() {}
-
+public interface TestInterface {
+	  void interfaceMethod();
 }

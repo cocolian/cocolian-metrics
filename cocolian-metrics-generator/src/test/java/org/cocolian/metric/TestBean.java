@@ -13,13 +13,34 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jigsaw.payment.metric;
+package org.cocolian.metric;
+
+import org.cocolian.metric.Timer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 /**
  * @author shamphone@gmail.com
  * @version 1.0.0
  * @date 2017年8月14日
  */
-public interface TestInterface {
-	  void interfaceMethod();
+public class TestBean {
+	private static final Logger logger = LoggerFactory.getLogger(TestBean.class);
+	  @Timer("class-method")
+      public void classMethod() {
+      	logger.debug("classMethod called!");
+      }
+
+      @Timer(value = "logged-method")
+      public void loggerMethod() {
+      	logger.debug("loggerMethod called!");
+      }
+
+      @Timer("errorMethod")
+      public void errorMethod() {
+      	logger.debug("errorMethod called!");
+          throw new RuntimeException("test exception");
+      }
+
 }

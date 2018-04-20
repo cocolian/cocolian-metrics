@@ -1,2 +1,2 @@
 # Auto Configure
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.jigsaw.payment.metric.TimerAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.cocolian.metric.TimerAutoConfiguration

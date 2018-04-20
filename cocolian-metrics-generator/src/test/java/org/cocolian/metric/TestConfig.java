@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jigsaw.payment.metric;
+package org.cocolian.metric;
 
 import org.mockito.Mockito;
 import org.springframework.boot.actuate.metrics.CounterService;

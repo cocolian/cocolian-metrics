@@ -1,4 +1,4 @@
-package org.jigsaw.payment.metric;
+package org.cocolian.metric;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
